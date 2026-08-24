@@ -1,0 +1,9 @@
+{
+  "name": "bytebrief",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A focused technical publishing platform built with Node.js.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

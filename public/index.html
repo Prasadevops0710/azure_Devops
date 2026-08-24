@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bytebrief: thoughtful writing for people building the future.">
+  <title>Bytebrief — Ideas for builders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Bytebrief home"><span class="brand-mark">B</span><span>bytebrief</span></a>
+    <nav class="topnav" aria-label="Main navigation"><a href="#discover">Discover</a><a href="#about">About</a><button class="write-link" id="writeButton">Write <span>↗</span></button></nav>
+    <div class="account-actions"><button class="icon-button" id="searchButton" aria-label="Search">⌕</button><button class="sign-in">Sign in</button><button class="join-button">Join free</button></div>
+  </header>
+
+  <main>
+    <section class="intro" id="about"><div><p class="eyebrow">A publication for curious builders</p><h1>Make something<br><em>worth reading.</em></h1><p class="intro-copy">Bytebrief is where engineers, designers, and makers share the thinking behind what they build.</p><button class="primary-button" id="startReading">Start reading <span>→</span></button></div><div class="intro-note"><span class="note-line"></span><p>Long-form ideas<br>for a fast-moving world.</p><span class="note-number">01 / 04</span></div></section>
+    <section class="content-section" id="discover"><div class="section-heading"><div><p class="eyebrow">The latest</p><h2>Ideas in motion</h2></div><div class="topic-list" id="topics" role="tablist" aria-label="Filter articles"><button class="topic active" data-topic="All">All</button><button class="topic" data-topic="Craft">Craft</button><button class="topic" data-topic="Systems">Systems</button><button class="topic" data-topic="AI & Data">AI & Data</button><button class="topic" data-topic="Frontend">Frontend</button></div></div><div class="article-grid" id="articleGrid" aria-live="polite"></div></section>
+    <section class="newsletter"><div><p class="eyebrow">The Sunday signal</p><h2>Good ideas,<br>once a week.</h2></div><form id="newsletterForm"><label for="email">A short, considered dispatch for people who make things.</label><div class="email-row"><input id="email" type="email" placeholder="you@company.com" required><button class="primary-button" type="submit">Subscribe <span>→</span></button></div><p class="form-message" id="formMessage"></p></form></section>
+  </main>
+  <footer><span class="brand"><span class="brand-mark">B</span><span>bytebrief</span></span><span>© 2026 Bytebrief Journal</span><span>Built for the in-between thoughts.</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
